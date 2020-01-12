@@ -16,14 +16,11 @@ import generic_package.BaseTest;
 public class JavaasciprtDemo {
 
 	public static void main(String[] args) throws Exception {
-		
 		System.setProperty("webdriver.gecko.driver", "./drivers/geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
 		//enter username -- using javascript
 		driver.get("https://www.google.com/");
-		
 		//get the window popup -- conrol P
-		
 		Robot r = new Robot();
 		r.keyPress(KeyEvent.VK_CONTROL);
 		r.keyPress(KeyEvent.VK_P);
